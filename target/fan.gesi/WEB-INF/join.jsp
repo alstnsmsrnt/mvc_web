@@ -96,7 +96,7 @@
                         <div class="fdb-box">
                             <div class="row">
                                 <div class="col">
-                                    <h1>Sign in</h1>
+                                    <h1>Sign Up</h1>
                                 </div>
                             </div>
 
