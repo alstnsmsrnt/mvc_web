@@ -39,6 +39,10 @@ public class Update extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // TODO Auto-generated method stub
 
+    	
+    	
+    	request.setCharacterEncoding("UTF-8");
+    	
         String boardID_str = request.getParameter("boardID");
         int boardID = Integer.parseInt(boardID_str);
 
@@ -63,6 +67,8 @@ public class Update extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // TODO Auto-generated method stub
 
+    	request.setCharacterEncoding("UTF-8");
+    	
         String title = request.getParameter("title");
         String content = request.getParameter("content");
         String boardID_str = request.getParameter("boardID");

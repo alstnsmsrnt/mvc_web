@@ -188,6 +188,7 @@ public class WriterDAO {
                 writerVO.setTitle(rs.getString(2));
                 writerVO.setContent(rs.getString(3));
                 writerVO.setDate(rs.getString(4));
+                writerVO.setUsernum(rs.getInt(5));
             }
 
             return writerVO;
@@ -238,7 +239,7 @@ public class WriterDAO {
 
     public int Update(String title, String content, int boardID) {
 
-        String SQL = "update writer set title = ?, content = ? WHERE boardid = ?;";
+        String SQL = "update writer set title = ?, content = ? WHERE boardid = ?";
 
         try {
 

@@ -38,6 +38,8 @@ public class View extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // TODO Auto-generated method stub
 
+    	
+    	
         String boardid_str = request.getParameter("boardid");
 
         int boardid = Integer.parseInt(boardid_str);

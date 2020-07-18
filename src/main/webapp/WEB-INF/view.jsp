@@ -141,7 +141,14 @@ body {
 
 						<%
         
-        				if(session.getAttribute("usernum") != null){//어디에 유저넘? DAO의?
+        				if(session.getAttribute("usernum") != null){
+        						
+						String session_str = session.getAttribute("usernum").toString();
+						int usernum = Integer.parseInt(session_str);
+						
+						if(writerVO.getUsernum() == usernum){
+							
+						
         				
         				%>
 						<div class="col-4 text-center">
@@ -161,6 +168,8 @@ body {
 							</form>
 						</div>
 						<% 
+						}
+						
 						} 
 						%>
 					</div>

@@ -33,6 +33,8 @@ public class WriteAction extends HttpServlet {
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 
+		request.setCharacterEncoding("UTF-8");
+		
 		String title = request.getParameter("title");
 		String content = request.getParameter("content");
 		String usernum_str = request.getParameter("usernum"); 
